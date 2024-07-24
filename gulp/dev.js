@@ -21,7 +21,7 @@ const rename = require("gulp-rename");
 const prettier = require("@bdchauvette/gulp-prettier");
 
 // Clean build directory
-gulp.task("clean:dev", function (done) {
+gulp.task("clean:dev", function(done) {
   if (fs.existsSync("./build/")) {
     return gulp.src("./build/", { read: false }).pipe(clean({ force: true }));
   }
@@ -42,7 +42,7 @@ const plumberNotify = (title) => ({
 });
 
 // HTML processing task
-gulp.task("html:dev", function () {
+gulp.task("html:dev", function() {
   return gulp
     .src([
       "./src/html/**/*.html",
@@ -92,7 +92,7 @@ gulp.task("html:dev", function () {
 });
 
 // SASS processing task
-gulp.task("sass:dev", function () {
+gulp.task("sass:dev", function() {
   return gulp
     .src("./src/scss/*.scss")
     .pipe(changed("./build/css/"))
@@ -111,7 +111,7 @@ gulp.task("sass:dev", function () {
 });
 
 // Image processing task
-gulp.task("images:dev", function () {
+gulp.task("images:dev", function() {
   return gulp
     .src(["./src/img/**/*", "!./src/img/svgicons/**/*"])
     .pipe(changed("./build/img/"))
@@ -166,7 +166,7 @@ const svgSymbol = {
 };
 
 // SVG stack task
-gulp.task("svgStack:dev", function () {
+gulp.task("svgStack:dev", function() {
   return gulp
     .src("./src/img/svgicons/**/*.svg")
     .pipe(plumber(plumberNotify("SVG:dev")))
@@ -175,7 +175,7 @@ gulp.task("svgStack:dev", function () {
 });
 
 // SVG symbol task
-gulp.task("svgSymbol:dev", function () {
+gulp.task("svgSymbol:dev", function() {
   return gulp
     .src("./src/img/svgicons/**/*.svg")
     .pipe(plumber(plumberNotify("SVG:dev")))
@@ -184,7 +184,7 @@ gulp.task("svgSymbol:dev", function () {
 });
 
 // Files copy task
-gulp.task("files:dev", function () {
+gulp.task("files:dev", function() {
   return gulp
     .src("./src/files/**/*")
     .pipe(changed("./build/files/"))
@@ -192,7 +192,7 @@ gulp.task("files:dev", function () {
 });
 
 // JavaScript processing task
-gulp.task("js:dev", function () {
+gulp.task("js:dev", function() {
   return gulp
     .src("./src/js/*.js")
     .pipe(changed("./build/js/"))
@@ -208,12 +208,12 @@ const serverOptions = {
 };
 
 // Live server task
-gulp.task("server:dev", function () {
+gulp.task("server:dev", function() {
   return gulp.src("./build/").pipe(server(serverOptions));
 });
 
 // Watch task
-gulp.task("watch:dev", function () {
+gulp.task("watch:dev", function() {
   gulp.watch("./src/scss/**/*.scss", gulp.parallel("sass:dev"));
   gulp.watch(
     ["./src/html/**/*.html", "./src/html/**/*.json"],
