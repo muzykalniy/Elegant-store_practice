@@ -1,0 +1,35 @@
+/* Подсказка адаптации
+
+•	320px — 480px: Mobile devices
+
+•	481px — 768px: iPads, Tablets
+
+•	769px — 1024px: Small screens, laptops
+
+•	1025px — 1200px: Desktops, large screens
+
+•	1201px and more — Extra large screens, TV
+*/
+
+:root {
+	--container-width: 1200px;
+	--container-padding: 15px;
+
+	--font-main: sans-serif;
+	--font-accent: "Manrope", sans-serif;
+	--font-titles: var(--font-accent);
+
+	--page-bg: #fff;
+	--text-color: #000;
+	--accent: #ac182c;
+	--link-color: #2578c8;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}
