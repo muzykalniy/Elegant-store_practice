@@ -19,7 +19,11 @@ img {
 }
 
 a {
-	color: var(--link-color);
+	font-family: var(--third-family);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 171%;
+	color: var(--neutral-07-100);
 }
 
 code {

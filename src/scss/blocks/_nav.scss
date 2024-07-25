@@ -1,11 +1,54 @@
 .header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .nav {
 	font-size: 18px;
 }
+.logo {
+	font-family: var(--font-accent);
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 100%;
+	text-align: center;
+	color: var(--neutral-07-100);
+}
 .nav__list {
 	display: flex;
-	column-gap: 30px;
+	align-items: center;
+	column-gap: 40px;
+}
+.nav__link {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+.nav__btns {
+	display: flex;
+	align-items: center;
+	gap: 17px;
+}
+.nav__btn {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.nav__btn-count {
+	display: inline-block;
+
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	background-color: var(--neutral-07-100);
+
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px;
+
+	text-align: center;
+	color: var(--yellow);
 }
 .active {
 }
