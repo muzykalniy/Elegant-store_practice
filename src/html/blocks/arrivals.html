@@ -17,7 +17,9 @@
     </div>
     <div class="container-right">
         <div class="arrivals__slider">
-            @@include('templates/card.html')
+            <!-- @@include('templates/card.html') -->
+
+            @@loop('templates/card.html', './../html/data/arrivals.json')
         </div>
     </div>
 </section>
