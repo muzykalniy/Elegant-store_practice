@@ -11,15 +11,16 @@
                     <div class="dot"></div>
                     <div class="dot"></div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
+
         </div>
 
     </div>
     <div class="container-right">
         <div class="arrivals__slider">
             <!-- @@include('templates/card.html') -->
-
-            @@loop('templates/card.html', './../html/data/arrivals.json')
+            @@include('templates/arrival-swiper.html')
         </div>
     </div>
 </section>
