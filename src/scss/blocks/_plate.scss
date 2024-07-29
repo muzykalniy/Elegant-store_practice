@@ -9,19 +9,19 @@
     &--01 {
         background-image: url("./../../img/collections/01.jpg");
         @include mediaBg() {
-            background-image: url("./../img/01@2x.jpg");
+            background-image: url("./../../img/collections/01@2x.jpg");
         }
     }
     &--02 {
         background-image: url("./../../img/collections/02.jpg");
         @include mediaBg() {
-            background-image: url("./../img/02@2x.jpg");
+            background-image: url("./../../img/collections/02@2x.jpg");
         }
     }
     &--03 {
         background-image: url("./../../img/collections/03.jpg");
         @include mediaBg() {
-            background-image: url("./../img/03@2x.jpg");
+            background-image: url("./../../img/collections/03@2x.jpg");
         }
     }
 }
