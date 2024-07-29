@@ -1,28 +1,9 @@
-# Gulp сборка для верстки сайтов от [ВебКадеми](https://webcademy.ru)
+# Elegant store practice
 
 - HTML,
 - SCSS,
 - Gulp,
 - JS
+- Swiper
 
-Документация и примеры использования внутри.
-
-Установить зависимости:
-
-```
-npm i
-```
-
-Запустить в режиме разработки:
-
-```
-gulp
-```
-
-Собрать версию для публикации:
-
-```
-gulp docs
-```
-
-[Смотреть демо](https://user.github.io/repo/)
+[Смотреть демо](https://muzykalniy.github.io/Elegant-store_practice/)

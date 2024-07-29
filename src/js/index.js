@@ -10,7 +10,7 @@ tagline();
 import Swiper from "swiper/bundle";
 
 // import styles bundle
-import "swiper/css/bundle";
+// import "swiper/css/bundle"; - отключаем чтобы переподключить файлы с node modules swiper.scss swiper-vars
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: 24,
