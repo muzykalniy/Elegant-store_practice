@@ -1,6 +1,6 @@
 # Elegant store practice
-
 - HTML,
+
 - SCSS,
 - Gulp,
 - JS

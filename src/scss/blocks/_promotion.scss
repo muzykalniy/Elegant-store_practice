@@ -2,6 +2,7 @@
     background-color: rgba(255, 170, 0, 0.4);
     display: grid;
     gap: 24px;
+
 }
 
 .promotion__desc {
@@ -9,19 +10,42 @@
     gap: 16px;
 }
 .promotion__content {
-    width: 50%;
-    padding: 100px 0;
+    padding: 100px 0 100px 72px;
 }
+
+.promotion__container{
+    padding-left: calc((100% - var(--container-width)) / 2 + var(--container-width) / 2);
+    padding-right: calc((100% - var(--container-width)) / 2);
+}
+
 .promotion__tagline {
+    font-family: var(--font-main), serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--blue);
 }
 .promotion__title {
+    font-family: var(--font-main), serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: #121212;
 }
 .promotion__text {
+    font-family: var(--font-main), serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #121212;
 }
 
 .promotion__timer {
     display: grid;
     gap: 12px;
+
 }
 .promotion__expires {
 }
