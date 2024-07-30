@@ -6,4 +6,4 @@
 - JS
 - Swiper
 
-[Смотреть демо](https://muzykalniy.github.io/Elegant-store_practice/)
+[Watch demo](https://muzykalniy.github.io/Elegant-store_practice/)
