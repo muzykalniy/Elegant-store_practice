@@ -1,0 +1,26 @@
+
+.value {
+  padding: 48px 32px;
+  background-color: #f3f5f7;
+}
+
+.value__img {
+  margin-bottom: 16px;
+}
+
+.value__title {
+  margin-bottom: 8px;
+  font-family: var(--second-family), serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--neutral-07-100);
+}
+
+.value__desc {
+  font-family: var(--font-accent), serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--neutral-04-100);
+}
