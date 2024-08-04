@@ -1,13 +1,14 @@
 .plate {
     padding-bottom: 50%;
     position: relative;
-    background: var(--neutral-02-100);
+    background-color: var(--neutral-02-100);
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
 
     &--01 {
         background-image: url("./../../img/collections/01.jpg");
+
         @include mediaBg() {
             background-image: url("./../../img/collections/01@2x.jpg");
         }
@@ -52,9 +53,8 @@
     letter-spacing: -0.03em;
     color: #121212;
 
-    border-bottom: 1px solid #121212;
 
-    display: inline-flex;
+
     gap: 4px;
     align-items: center;
 }
